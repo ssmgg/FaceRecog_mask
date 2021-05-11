@@ -1,0 +1,66 @@
+python evaluate.py --config_path=./configs/config_ms1m_100.yaml --model_path=best-m-1006000 --val_data=embd.pkl
+python evaluate.py --config_path=./configs/config_ms1m_100.yaml --model_path=best-m-1006000 --val_data=C:\Users\smgg\Downloads\faces_ms1m-refine-v2_112x112\faces_emore\agedb_30.bin
+python get_embd.py --config_path=./configs/config_ms1m_100.yaml --model_path=best-m-1006000 --read_path=C:\Users\smgg\Desktop\1.jpg --save_path=embd.pkl
+
+pip install scipy==0.9.0'
+
+python test.py --model=C:\Users\smgg\Desktop\InsightFace-tensorflow\best-m-1006000 --det=0
+
+python test.py --model=..\models\mnet_cov2 --det=0
+
+python pip test.py --model=..\models\mnet_cov2,1 --det=0
+
+
+------------
+
+python test.py --cfg_path="./configs/retinaface_res50.yaml" --img_path="./data/sclab.jpg"
+
+python sclab/get_embs.py --cfg_path="./configs/arc_res50.yaml" --img_path="./lab_crop/0/1.jpg
+
+python train.py --mode="fit" --cfg_path="./configs/arc_res50.yaml"
+
+python train2.py --mode="eager_tf" --cfg_path="./configs/arc_res50.yaml"
+
+python data/convert_train_binary_tfrecord.py --dataset_path="./lab_crop" --output_path="./data/0606_17_16.tfrecord"
+
+
+
+--------------
+
+tensorboard --logdir=./output/20200607-174242/log
+
+
+--------------
+arcface-tf2
+
+python data/generateTFRecord.py --mode=folders --image_size=112 --read_dir=./lab_crop --save_path=./0606_20_54.tfrecord
+
+python finetune_softmax.py --config_path=./configs/config_finetune.yaml
+
+PyYAML
+sklearn
+scipy=1.1.0
+
+python get_embd_mj.py --config_path=./configs/config_ms1m_100.yaml --model_path=./checkpoints/config_ms1m_100_1006k/best-m-1006000 --read_path=./lab_test_embs/minimin_7.jpg --save_path=./lab_test_embs/revise/2/minimin_7.npy
+
+python get_embd_mj.py --config_path=./configs/config_ms1m_100.yaml --model_path=./checkpoints/config_ms1m_100_1006k/best-m-1006000 --read_path=./lab_crop/test2.jpg --save_path=./lab_test_embs/test2.npy
+
+python distance.py --embedding1=./lab_test_embs/test.npy --embedding2=./lab_test_embs/test2.npy
+
+
+-------------------
+retinaface-tf2
+
+python detector.py --img_path="./data/chaehyun/5.jpg"
+
+
+
+
+------------------
+
+python detector.py --
+
+down-scale factor = 0.3
+
+dis9
+

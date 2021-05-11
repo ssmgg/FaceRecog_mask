@@ -1,0 +1,15 @@
+1
+    circles = cv2.HoughCircles(imgray, cv2.HOUGH_GRADIENT, 1, 3,
+                               param1=50, param2=50, minRadius=0, maxRadius=0)
+
+2
+    circles = cv2.HoughCircles(imgray, cv2.HOUGH_GRADIENT, 1, 3,
+                               param1=40, param2=50, minRadius=0, maxRadius=0)
+
+3
+    circles = cv2.HoughCircles(imgray, cv2.HOUGH_GRADIENT, 1, 3,
+                               param1=60, param2=50, minRadius=0, maxRadius=0)
+
+4
+    circles = cv2.HoughCircles(imgray, cv2.HOUGH_GRADIENT, 1, 3,
+                               param1=55, param2=50, minRadius=0, maxRadius=0)
